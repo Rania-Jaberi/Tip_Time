@@ -85,6 +85,7 @@ fun EditNumberField(modifier: Modifier = Modifier) {
 
     TextField(
         value = amountInput,
+        label = { Text(stringResource(R.string.bill_amount)) },
         onValueChange = { amountInput = it },
         modifier = modifier,
         keyboardOptions = KeyboardOptions.Default.copy(keyboardType = KeyboardType.Number)
