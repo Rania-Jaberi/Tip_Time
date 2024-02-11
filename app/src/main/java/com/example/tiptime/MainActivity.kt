@@ -42,6 +42,7 @@ import com.example.tiptime.ui.theme.TipTimeTheme
 import java.text.NumberFormat
 import androidx.compose.material3.Switch
 import androidx.compose.ui.res.painterResource
+import org.jetbrains.annotations.VisibleForTesting
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -176,7 +177,10 @@ fun EditNumberField(
 }
 
 
-private fun calculateTip(
+
+@VisibleForTesting
+//La méthode est rendue publique, mais elle indique qu'elle n'est publique qu'à des fins de test.
+internal fun calculateTip(
     amount: Double,
     tipPercent: Double = 15.0,
     roundUp: Boolean
