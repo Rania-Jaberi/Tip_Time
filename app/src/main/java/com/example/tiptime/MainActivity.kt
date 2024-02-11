@@ -195,3 +195,6 @@ fun TipTimeLayoutPreview() {
         TipTimeLayout()
     }
 }
+
+//Champs de texte – Material Design 3
+//Bouton bascule – Material Design 3
